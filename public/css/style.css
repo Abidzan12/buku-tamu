@@ -1,0 +1,30 @@
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 260px;
+    z-index: 1001;
+    background: #111827;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: left 0.3s ease;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed .menu-title,
+.sidebar.collapsed .sidebar-menu a span {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-logo {
+    margin-bottom: 10px;
+}
+
+.sidebar.collapsed ~ .content {
+    margin-left: 60px;
+}
